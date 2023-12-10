@@ -1,5 +1,6 @@
 #define  _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
+#include <stdio.h>
+#include <string.h>
 //输入一个三位数和一个两位数，并输出他们相乘的竖式
 int main()
 {
