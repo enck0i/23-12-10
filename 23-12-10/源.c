@@ -20,8 +20,10 @@
 //	return 0;
 //}
 
+
 int main()
-{//书上内容（理解第一）
+{//书上内容（注意理解第一）
+
     int count = 0;
     char s[20], buf[99];
     scanf("%s", s);
