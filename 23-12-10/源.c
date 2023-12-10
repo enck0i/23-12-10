@@ -16,6 +16,7 @@ int main()
 		printf("%d.\n", abc * (de / 10));
 		printf("-----\n");
 		printf("%d\n\n", abc * (de % 10) + abc * (de / 10) * 10);
+
 	}
 	return 0;
 }
