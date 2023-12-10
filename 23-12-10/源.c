@@ -50,14 +50,26 @@
 
 
 #include<assert.h>
+//int main()
+//{//断言函数，需要引用assert.h头文件
+// //可以精准报错
+//	int a = 5, b = 0;
+//	assert(a != 5);
+//	while (scanf("%d", &b))
+//	{
+//		a = 5;
+//	}
+//	
+//	return 0;
+//}
+
 int main()
-{//断言函数，需要引用assert.h头文件
-	int a = 5, b = 0;
-	assert(a != 5);
-	while (scanf("%d", &b))
+{
+	int a = 0;
+	while (scanf("%d", &a))
 	{
-		a = 5;
+		assert(a != 5);
+		printf("there nothing\n");
 	}
-	
 	return 0;
 }
