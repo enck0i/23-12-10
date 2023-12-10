@@ -63,13 +63,27 @@
 //	return 0;
 //}
 
+//int main()
+//{
+//	int a = 0;
+//	while (scanf("%d", &a))
+//	{
+//		assert(a != 5);
+//		printf("there nothing\n");
+//	}
+//	return 0;
+//}
+
+int SameOf_a_b(int a, const int b)
+{//const表示常量
+	a = b;
+	printf("%d", a);
+	printf("%d", b);
+}
 int main()
 {
-	int a = 0;
-	while (scanf("%d", &a))
-	{
-		assert(a != 5);
-		printf("there nothing\n");
-	}
+	int a, b;
+	scanf("%d%d", &a, &b);
+	SameOf_a_b(a, b);
 	return 0;
 }
