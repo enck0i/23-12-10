@@ -74,16 +74,34 @@
 //	return 0;
 //}
 
-int SameOf_a_b(int a, const int b)
-{//const表示常量
-	a = b;
-	printf("%d", a);
-	printf("%d", b);
-}
+//int SameOf_a_b(int a, const int b)
+//{//const表示常量
+//	a = b;
+//	printf("%d", a);
+//	printf("%d", b);
+//}
+//int main()
+//{
+//	int a, b;
+//	scanf("%d%d", &a, &b);
+//	SameOf_a_b(a, b);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a = 10;
+//	int* pi = &a;
+//	printf("%x\n", pi);
+//	printf("%d\n", *pi);
+//	return 0;
+//}
+
 int main()
 {
-	int a, b;
-	scanf("%d%d", &a, &b);
-	SameOf_a_b(a, b);
+	const int a = 10;
+	int* p = &a;
+	*p = 20;
+	printf("%d", *p);
 	return 0;
 }
