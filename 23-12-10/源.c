@@ -97,36 +97,45 @@
 //	return 0;
 //}
 
+//int main()
+//{
+//	const int a = 10;
+//	int* p = &a;
+//	*p = 20;//此时可以通过*p来更改变量a的值
+//	printf("a = %d\n", *p);
+//
+//	const int b = 10;
+//	const int* p1 = &b;
+//	//*pi = 20;
+//	//若给int*用const修饰就可以防止b的量被改变
+//	printf("b = %d\n", *p1);
+//
+//	const int c = 10;
+//	const int* p2 = &c;
+//	//这里的const修饰*p2，但是p2还可以被改变
+//	int* p3 = &c;
+//	*p3 = 20;
+//	printf("c = %d\n", *p3);
+//	printf("%d\n", p3);
+//	p3 = 100;
+//	printf("%d\n", p3);
+//
+//	const int d = 10;
+//	int* const p4 = &d;
+//	//这个const是修饰p4而不是*p4，*p4可以被改变，指针指向的内容可以随意改变。
+//	printf("p4 = %d\n", *p4);
+//	*p4 = 20;
+//	printf("p4 = %d\n", *p4);
+//	//p4 = 100;
+//	printf("%d\n", p4);
+//	return 0;
+//}
+
 int main()
 {
-	const int a = 10;
-	int* p = &a;
-	*p = 20;//此时可以通过*p来更改变量a的值
-	printf("a = %d\n", *p);
+	int a = 10;
+	const const int* const pi = &a;
+	//彻底锁死
 
-	const int b = 10;
-	const int* p1 = &b;
-	//*pi = 20;
-	//若给int*用const修饰就可以防止b的量被改变
-	printf("b = %d\n", *p1);
-
-	const int c = 10;
-	const int* p2 = &c;
-	//这里的const修饰*p2，但是p2还可以被改变
-	int* p3 = &c;
-	*p3 = 20;
-	printf("c = %d\n", *p3);
-	printf("%d\n", p3);
-	p3 = 100;
-	printf("%d\n", p3);
-
-	const int d = 10;
-	int* const p4 = &d;
-	//这个const是修饰p4而不是*p4
-	printf("p4 = %d\n", *p4);
-	*p4 = 20;
-	printf("p4 = %d\n", *p4);
-	//p4 = 100;
-	printf("%d\n", p4);
 	return 0;
 }
